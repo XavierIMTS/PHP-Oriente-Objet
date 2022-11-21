@@ -1,4 +1,5 @@
 window.onload = () => {
+
     let boutons = document.querySelectorAll(".custom-control-input")
 
     for(let bouton of boutons){
@@ -8,6 +9,7 @@ window.onload = () => {
 
 
 function activer(){
+
     let xmlhttp = new XMLHttpRequest;
 
     xmlhttp.open('GET', '/admin/activeAnnonce/'+this.dataset.id)
